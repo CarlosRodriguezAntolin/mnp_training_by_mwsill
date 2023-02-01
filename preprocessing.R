@@ -54,7 +54,7 @@ remove <- unique(c(match(amb.filter[,1], rownames(Mset)),
 
 Mset_filtered <- Mset[-remove,]
 
-save(Mset,anno,file=file.path("results","Mset_filtered.RData"))  
+save(Mset_filtered,anno,file=file.path("results","Mset_filtered.RData"))  
 
 rm(Mset)
 gc()
